@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/headerfooter.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <dialog id="dialog">
+        <div class="container-dialog">
+            <div class="icon-success-dialog">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="text-container-dialog">
+                <h3>Deleted Successfully</h3>
+                <p>Book Title : <span id="book-title-dialog"></span></p>
+                <p>Book Author : <span id="book-author-dialog"></span></p>
+                <p>Year Released : <span id="year-released-dialog"></span></p>
+            </div>
+        </div>
+    </dialog>
+    <header>
+        <section>
+            <h1>Bookshelf</h1>
+            <span>Save & find information about your books here</span>
+        </section>
+        <nav>
+            <ul>
+                <li>Finished Reading <span id="finished-reading-count">0</span></li>
+                <li>Unfinished Reading <span id="unfinished-reading-count">0</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sec1">
+            <form>
+                <fieldset>
+                    <h2>Search</h2>
+                    <div class="search-bar">
+                        <input autocomplete="off" type="text" id="input-search" list="option-books" placeholder="Find your Books"><button type="button" id="search-button" >Search</button>
+                        <i title="Remove All Books from Search" id="remove-search-content" class="fa-solid fa-broom"></i>
+
+                        <datalist id="option-books">
+                            
+                        </datalist>
+                    </div>
+                    <div id="content-search-container" class="content-search-container">
+                        
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section id="sec2">
+            <form id="insert-book-form">
+                <fieldset>
+                    <h2>Insert your new Books</h2>
+                    <div class="insert-book-container">
+                        <label>Title</label>
+                        <input type="text" id="input-book-title">
+                        <label>Author</label>
+                        <input type="text" id="input-book-author">
+                        <label>Year Released</label>
+                        <input type="date" id="input-year-released">
+                        <label>Finished Reading <input type="checkbox" id="input-status-book"></label>
+                        <input type="submit" value="Insert">
+                    </div>
+                </fieldset>
+            </form>
+            <div class="unfinished-reading-shelf">
+                <div class="unfinished-reading-wrap">
+                    <h2>Unfinished Reading Shelf</h2>
+                    <div class="unfinished-reading-container" id="unfinished-reading-container">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec3">
+            <div class="finished-reading-shelf">
+                <div class="finished-reading-wrap">
+                    <h2>Finished Reading Shelf</h2>
+                    <div class="finished-reading-container" id="finished-reading-container">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>Bookshelf App  -  Fariz Alfathin</h3>
+        </section>
+    </footer>
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>

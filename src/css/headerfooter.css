@@ -1,0 +1,38 @@
+header { width: 100%; display: inline;}
+header section {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    color: var(--basic-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://uiii.ac.id/assets/images/1636690539-alfons-morales-YLSwjSy7stw-unsplash-2.jpg);
+}
+header section h1 { font-size: 3.5rem; }
+header nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    padding: 1.2rem 1rem;
+}
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    color: var(--basic-color);
+}
+
+
+footer section {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--basic-color);
+}
